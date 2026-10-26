@@ -1,0 +1,22 @@
+{
+  "providers": [
+    {
+      "id": "example-provider",
+      "name": "Example Provider",
+      "baseURL": "https://api.example.invalid/v1",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "enabled": true,
+      "authEnv": "EXAMPLE_PROVIDER_API_KEY",
+      "modelsPrefixes": [],
+      "modelsExcludePrefixes": [],
+      "aliases": {},
+      "providerAliases": {},
+      "modelPackages": {},
+      "fallbackLimits": {
+        "context": 32000,
+        "output": 4096
+      },
+      "priceCurrency": "USD"
+    }
+  ]
+}

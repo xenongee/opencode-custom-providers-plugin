@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+providers.json
+node_modules/
+package-lock.json
+/tests

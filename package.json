@@ -1,0 +1,34 @@
+{
+  "name": "opencode-custom-providers-plugin",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "license": "Unlicense",
+  "description": "Pure TypeScript OpenCode V2 custom model provider plugin",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "files": [
+    "index.ts",
+    "models.ts",
+    "runtime.ts",
+    "providers.example.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test --test-timeout=5000 \"tests/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "7.0.2"
+  }
+}
